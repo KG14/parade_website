@@ -161,11 +161,12 @@
     
     // Set the flake's color based on color options
     var color = Array.isArray(options.color) ? options.color[Math.floor(Math.random() * options.color.length)] : options.color;
+    console.log(color)
 
     // Create object to store final CSS properties for the flake
     var endCSS = {
       "transform": "translateX(" + endX + "px) translateY(" + endY + "px) rotateZ(" + endRotation + "deg)",
-      "opacity": 0
+      "opacity": 0,
     };
 
     // Create the flake, set the CSS for it, and animate it
@@ -179,6 +180,7 @@
       "padding": "2px",
       "pointer-events": "none",
       "font-size": fontSize + "px",
+      "font-family": "monospace",
       "opacity": options.startTransparency,
       "position": "absolute",
       "top": "-" + (options.large * 1.2) + "px",
@@ -186,6 +188,7 @@
       "transition": "transform " + (speed / 1000) + "s linear, opacity " + (speed / 1000) + "s " + options.opacityEasing,
       "z-index": options.zIndex,
     }).appendTo($container);
+    console.log($flake);
 
     if (supportsTransitions) {
 
@@ -257,6 +260,7 @@
         'overflow': options.overflow,
         'pointer-events': 'none'
       }).prependTo($el);
+      $('#livestream').append($container);
 
       // On window resize, recalculate the width used to generate flakes within
       var containerWidth = $container.width();

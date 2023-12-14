@@ -1,17 +1,18 @@
 $(document).ready(function () {
     $(document).ready(function () {
         $("body").flurry({
-          character: "❄",
-          color: "white",
-          height: 400,
-          frequency: 80,
-          speed: 4000,
+          character: "❄❅❆",
+          color: ["rgb(59, 7, 100)", "white", "#7c3aed"],
+          height: 500,
+          frequency: 5,
+          speed: 2000,
           small: 8,
-          large: 48,
-          wind: 60,
+          large: 20,
+          wind: 100,
           windVariance: 20,
           rotation: 0,
           rotationVariance: 90,
+          zIndex: 0,
         });
       });
 });

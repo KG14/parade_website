@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
-    <!--<script src="../static/js/jquery.flurry.js"></script>
+    <!-- --><script src="../static/js/jquery.flurry.js"></script>
     <script src="../static/js/index.js"></script>
-    <link href="../static/css/main.css" rel="stylesheet">-->
+    <link href="../static/css/main.css" rel="stylesheet"><!-- -->
     <script src="{{url_for('static',filename='js/jquery.flurry.js')}}"></script>
     <script src="{{url_for('static',filename='js/index.css')}}"></script>
 </head>
@@ -17,17 +17,17 @@
         <div class="flex items-center justify-center">
             <button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">Parade</button>
             <div class="flex items-center text-violet-300 text-3xl font-bold pl-3 pr-3">
-                <!--<img src="../static/amador_logo.png" class="h-10">-->
-                <img src="{{url_for('static',filename='amador_logo.png')}}" class="h-10">
+                <img src="../static/amador_logo.png" class="h-10">
+                <!--<img src="{{url_for('static',filename='amador_logo.png')}}" class="h-10">-->
                 <p class="pl-1 pb-1">AVHS</p>
             </div>
             <button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">About</button>
         </div>
     </nav>
-    <section id="livestream" class="h-80 bg-gradient-to-b from-violet-300 to-white to-25%">
-        <h1 class="text-5xl font-extrabold text-center pt-10 text-purple-500 uppercase" style="z-index: 500;">Happy Holidays,</h1>
-        <p class="text-2xl font-extrabold text-center text-violet-600 uppercase">Pleasanton Families!</p>
-        <div class="w-full flex justify-center pt-12 aspect-video"><iframe class="z-10" style="border-radius: 10px;" width="60%" height="400px" src="https://www.youtube.com/embed/PrKBIzOIyaM?si=DPhkCGn4SahOtS_U&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe></div>
+    <section id="livestream" class="relative h-80 bg-gradient-to-b from-violet-300 to-white to-25%"> 
+        <h1 class="relative text-5xl font-extrabold text-center pt-10 text-purple-500 uppercase z-10">Happy Holidays,</h1>
+        <p class="relative text-2xl font-extrabold text-center text-violet-600 uppercase z-10">Pleasanton Families!</p>
+        <div class="relative w-full flex justify-center pt-12 aspect-video z-10"><iframe class="z-10" style="border-radius: 10px;" width="60%" height="400px" src="https://www.youtube.com/embed/PrKBIzOIyaM?si=DPhkCGn4SahOtS_U&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe></div>
     </section>
 </body>
 </html>
