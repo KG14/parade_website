@@ -161,7 +161,6 @@
     
     // Set the flake's color based on color options
     var color = Array.isArray(options.color) ? options.color[Math.floor(Math.random() * options.color.length)] : options.color;
-    console.log(color)
 
     // Create object to store final CSS properties for the flake
     var endCSS = {
@@ -188,7 +187,6 @@
       "transition": "transform " + (speed / 1000) + "s linear, opacity " + (speed / 1000) + "s " + options.opacityEasing,
       "z-index": options.zIndex,
     }).appendTo($container);
-    console.log($flake);
 
     if (supportsTransitions) {
 
