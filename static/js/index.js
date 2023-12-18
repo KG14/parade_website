@@ -3,7 +3,7 @@ $(document).ready(function () {
         $("body").flurry({
           character: "❄❅❆",
           color: ["rgb(59, 7, 100)", "white", "#7c3aed"],
-          height: 500,
+          height: 700,
           frequency: 5,
           speed: 2000,
           small: 8,
