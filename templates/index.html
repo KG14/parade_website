@@ -8,9 +8,9 @@
     <link rel="icon" href="{{url_for('static',filename='amador_logo.png')}}">
     <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
-    <!-- --><script src="../static/js/jquery.flurry.js"></script>
+    <!--<script src="../static/js/jquery.flurry.js"></script>
     <script src="../static/js/index.js"></script>
-    <link href="../static/css/main.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">-->
     <script src="{{url_for('static',filename='js/jquery.flurry.js')}}"></script>
     <script src="{{url_for('static',filename='js/index.js')}}"></script>
 </head>
@@ -20,8 +20,8 @@
         <div class="flex items-center justify-center">
             <button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">Parade</button>
             <div class="flex items-center text-violet-300 text-3xl font-bold pl-3 pr-3">
-                <img src="../static/amador_logo.png" class="h-10">
-                <!--<img src="{{url_for('static',filename='amador_logo.png')}}" class="h-10">-->
+                <!--<img src="../static/amador_logo.png" class="h-10">-->
+                <img src="{{url_for('static',filename='amador_logo.png')}}" class="h-10">
                 <p class="pl-1 pb-1">AVHS</p>
             </div>
             <button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">About</button>
@@ -34,8 +34,8 @@
         <img class="w-full" src="../static/snowdrift.svg">
     </section>
     <section id="footer" class="relative bg-violet-950 p-10 pb-8 flex items-center justify-center">
-        <img src="../static/amador_logo.png" class="h-20">
-        <!--<img src="{{url_for('static',filename='amador_logo.png')}}" class="h-10">-->
+        <!-- <img src="../static/amador_logo.png" class="h-20"> -->
+        <img src="{{url_for('static',filename='amador_logo.png')}}" class="h-10">
         <p class="pl-4 pb-1 text-violet-300 text-2xl font-bold uppercase">Amador Valley<br>High School</p>
     </section>
 </body>
