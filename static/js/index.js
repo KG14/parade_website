@@ -6,7 +6,7 @@ $(document).ready(function () {
     frequency: 5,
     speed: 2000,
     small: 8,
-    large: 20,
+    large: 15,
     wind: 100,
     windVariance: 20,
     rotation: 0,
@@ -34,12 +34,18 @@ $(document).ready(function () {
 
     // If the count down is finished, show livestream
     if (distance < 0 && !countdown_container.classList.contains('hidden')) {
-      console.log('finished');
       countdown_container.classList.add('hidden');
       livestream.classList.remove('hidden');
     }
   }
   updateTimer();
+
+  window.liveTest = function liveTest() {
+    if (!countdown_container.classList.contains('hidden')) {
+      countdown_container.classList.add('hidden');
+      livestream.classList.remove('hidden');
+    }
+  }
 
   var x = setInterval(function() { // Update every minute
     updateTimer();
