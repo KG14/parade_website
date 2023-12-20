@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("body").flurry({
     character: "❄❅❆",
     color: ["rgb(59, 7, 100)", "white", "#7c3aed"],
-    height: 700,
+    height: document.querySelector("html").scrollHeight * 0.7,
     frequency: 5,
     speed: 2000,
     small: 8,
@@ -18,6 +18,11 @@ $(document).ready(function () {
   var countdown = document.getElementById('timer');
   var livestream = document.getElementById('livestream-video');
   var countDownDate = new Date("Dec 21, 2023 08:30:00").getTime();
+  var flurryContainer = document.getElementsByClassName('flurry-container')
+
+  document.addEventListener('resize', (event) => {
+    flurryContainer.height = document.querySelector("html").scrollHeight * 0.7;
+  });
 
   function updateTimer() {
     var now = new Date().getTime(); // Current date

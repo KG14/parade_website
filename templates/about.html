@@ -1,0 +1,88 @@
+<!doctype html>
+<html style="overscroll-behavior-y: none;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | AVHS Holiday Parade</title>
+    <!-- <link rel="icon" href="../static/amador_logo.png"> -->
+    <link rel="icon" href="{{url_for('static',filename='amador_logo.png')}}">
+    <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <!-- <link href="../static/css/main.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/6367e08e07.js" crossorigin="anonymous"></script>
+    <style>
+        #how i {
+            color: #e8f7fe;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-violet-900 p-3">
+        <div class="flex items-center justify-center">
+            <a href="index.html"><button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">Parade</button></a>
+            <div class="flex items-center text-violet-300 text-3xl font-bold pl-3 pr-3">
+                <!-- <img src="../static/amador_logo.png" class="h-8 md:h-10 lg:h-10"> -->
+                <img src="{{url_for('static',filename='amador_logo.png')}}" class="h-8 md:h-10 lg:h-10">
+                <p class="pl-1 pb-1">AVHS</p>
+            </div>
+            <a href="about.html"><button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">About</button></a>
+        </div>
+    </nav>
+    <section id="who" class="bg-violet-950 p-10 md:pr-20 md:pl-20 lg:p-20 lg:pt-12"> 
+        <div>
+            <h1 class="text-xl font-bold text-violet-400 uppercase text-center lg:text-left">Who we are</h1>
+            <h1 class="text-4xl font-extrabold text-white text-center lg:hidden">AVHS Advanced CS Projects</h1>
+            <h1 class="hidden text-4xl font-extrabold text-white text-left lg:block">AVHS Advanced Computer Science Projects</h1>
+            <p class="text-white mt-5 text-center lg:text-left">The Pleasanton Unified School District continuously pushes the envelope between what is known, and what is possible. Recognizing the need to challenge students beyond their current knowledge base in Computer Science, the capstone course, <strong class="text-yellow-500">Advanced Computer Science Projects for the Contemporary World</strong>, was created in 2023 to allow students to pursue the innovation of the ever-changing technology in the world we live in today. Dabbling in concepts including (but not limited to) Machine Learning, Artificial Intelligence, Virtual Reality and applications of Data Science, Amador Valley High School Students prepare themselves for not just college, but for careers in the real world. This unique course allows students to dream about what is possible and to actually make it a reality.</p>
+        </div>
+        <div class="flex justify-center mt-8 lg:w-full">
+            <!-- <img src="../static/advcomp_students.jpeg" class="rounded-lg"> -->
+            <img src="{{url_for('static',filename='advcomp_students.jpeg')}}" class="rounded-lg">
+        </div>
+    </section>
+    <section id="how" class="bg-white p-7 pt-10 md:pl-16 md:pr-16 lg:flex lg:p-20 lg:pt-10 lg:pb-10">
+        <div class="flex items-center md:pl-16 md:pr-16 lg:flex-1 lg:pr-15 lg:pl-0">
+            <div>
+                <h1 class="text-xl font-extrabold text-violet-500 uppercase text-center lg:text-left">The process</h1>
+                <h1 class="text-3xl font-extrabold text-violet-950 text-center lg:text-left">How do you create a robot drone holiday parade?</h1>
+                <p class="mt-5 text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus nisl tincidunt eget nullam non nisi.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 mt-5 pb-5 md:grid-cols-3 lg:w-3/5">
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Client<br><i class="fa-solid fa-handshake text-5xl pt-4"></i></p>
+            </div>
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Project Groups<br><i class="fa-solid fa-people-group text-5xl pt-4"></i></p>
+            </div>
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Sprint Tasks<br><i class="fa-solid fa-person-running text-5xl pt-4"></i></p>
+            </div>
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Project Manager<br><i class="fa-solid fa-user-ninja text-5xl pt-4"></i></p>
+            </div>
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Robot Team<br><i class="fa-solid fa-robot text-5xl pt-4"></i></p>
+            </div>
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Drone Team<br><i class="fa-solid fa-helicopter text-5xl pt-4"></i></p>
+            </div>
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Publicity & Hospitality<br><i class="fa-solid fa-bullhorn text-5xl pt-4"></i></p>
+            </div>
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Website & Server<br><i class="fa-solid fa-server text-5xl pt-4"></i></p>
+            </div>
+            <div class="rounded-md p-5 mt-2 flex items-center justify-center" style="background-color: #518ca6;">
+                <p class="text-xl text-white font-bold text-center">Parade<br><i class="fa-solid fa-sleigh text-5xl pt-4"></i></p>
+            </div>
+        </div>
+
+    </section>
+    <section id="footer" class="relative bg-violet-950 p-10 pb-8 flex items-center justify-center">
+        <!-- <img src="../static/holiday_parade_logo.svg" class="h-15 md:h-20 lg:h-20"> -->
+        <img src="{{url_for('static',filename='holiday_parade_logo.svg')}}" class="h-15 md:h-20 lg:h-20">
+    </section>
+</body>
+</html>
