@@ -20,13 +20,13 @@
 <body>
     <nav class="bg-violet-900 p-3">
         <div class="flex items-center justify-center">
-            <a href="index.html"><button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">Parade</button></a>
+            <a href="{{ url_for('index') }}"><button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">Parade</button></a>
             <div class="flex items-center text-violet-300 text-3xl font-bold pl-3 pr-3">
                 <!-- <img src="../static/amador_logo.png" class="h-8 md:h-10 lg:h-10"> -->
                 <img src="{{url_for('static',filename='amador_logo.png')}}" class="h-8 md:h-10 lg:h-10">
                 <p class="pl-1 pb-1">AVHS</p>
             </div>
-            <a href="about.html"><button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">About</button></a>
+            <a href=""><button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">About</button></a>
         </div>
     </nav>
     <section id="who" class="bg-violet-950 p-10 md:pr-20 md:pl-20 lg:p-20 lg:pt-12"> 
