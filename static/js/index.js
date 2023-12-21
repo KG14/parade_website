@@ -17,7 +17,7 @@ $(document).ready(function () {
   var countdown_container = document.getElementById('countdown-container');
   var countdown = document.getElementById('timer');
   var livestream = document.getElementById('livestream-video');
-  var countDownDate = new Date("Dec 21, 2023 08:30:00").getTime();
+  var countDownDate = new Date("Dec 21, 2023 09:30:00").getTime();
   var flurryContainer = document.getElementsByClassName('flurry-container')
 
   document.addEventListener('resize', (event) => {
