@@ -10,6 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <!-- <link href="../static/css/main.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/6367e08e07.js" crossorigin="anonymous"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
     <style>
         #how i {
             color: #e8f7fe;
@@ -23,7 +26,7 @@
             <a href="{{ url_for('index') }}"><button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">Parade</button></a>
             <div class="flex items-center text-violet-300 text-3xl font-bold pl-3 pr-3">
                 <!-- <img src="../static/amador_logo.png" class="h-8 md:h-10 lg:h-10"> -->
-                <img src="{{url_for('static',filename='amador_logo.png')}}" class="h-8 md:h-10 lg:h-10">
+                <a href="https://amador.pleasantonusd.net" target=”_blank”><img src="{{url_for('static',filename='amador_logo.png')}}" class="h-8 md:h-10 lg:h-10"></a>
                 <p class="pl-1 pb-1">AVHS</p>
             </div>
             <a href=""><button class="hover:bg-violet-950/60 text-white pt-1 pb-1 pl-3 pr-3 rounded">About</button></a>
@@ -34,7 +37,7 @@
             <h1 class="text-xl font-bold text-violet-400 uppercase text-center lg:text-left">Who we are</h1>
             <h1 class="text-4xl font-extrabold text-white text-center lg:hidden">AVHS Advanced CS Projects</h1>
             <h1 class="hidden text-4xl font-extrabold text-white text-left lg:block">AVHS Advanced Computer Science Projects</h1>
-            <p class="text-white mt-5 text-center lg:text-left">The Pleasanton Unified School District continuously pushes the envelope between what is known, and what is possible. Recognizing the need to challenge students beyond their current knowledge base in Computer Science, the capstone course, <strong class="text-yellow-500">Advanced Computer Science Projects for the Contemporary World</strong>, was created in 2023 to allow students to pursue the innovation of the ever-changing technology in the world we live in today. Dabbling in concepts including (but not limited to) Machine Learning, Artificial Intelligence, Virtual Reality and applications of Data Science, Amador Valley High School Students prepare themselves for not just college, but for careers in the real world. This unique course allows students to dream about what is possible and to actually make it a reality.</p>
+            <p class="text-white mt-5 text-center lg:text-left">The Pleasanton Unified School District continuously pushes the envelope between what is known, and what is possible. Recognizing the need to challenge students beyond their current knowledge base in Computer Science, the capstone course, <strong class="text-yellow-500">Advanced Computer Science Projects for the Contemporary World</strong>, was created in 2023 to allow students to pursue the innovation of the ever-changing technology in the world we live in today. Dabbling in concepts including (but not limited to) Machine Learning, Artificial Intelligence, Virtual Reality and applications of Data Science, Amador Valley High School Students prepare themselves for not just college, but for careers in the real world. This unique course allows students to dream about what is possible and to actually make it a reality. <a class="underline text-yellow-500" href="https://amador.pleasantonusd.net" target=”_blank”>Learn more about Amador <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></a></p>
         </div>
         <div class="flex justify-center mt-8 lg:w-full">
             <!-- <img src="../static/advcomp_students.jpeg" class="rounded-lg"> -->
